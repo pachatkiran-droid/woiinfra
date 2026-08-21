@@ -32,7 +32,7 @@ export default function PrimaryNavbar() {
         {/* Brand Logo */}
         <NavLink to="/" className="flex items-center group select-none">
           <span className="text-xl font-black tracking-tighter lowercase text-white">
-            carty<span className="text-[#D9FD3A] font-extrabold">’</span>
+            Woi Infra <span className="text-[#D9FD3A] font-extrabold"></span>
           </span>
         </NavLink>
 
@@ -81,21 +81,7 @@ export default function PrimaryNavbar() {
         </nav>
 
         {/* Action Controls */}
-        <div className="flex items-center gap-3">
-          <NavLink
-            to="/login"
-            className="hidden sm:inline-block text-xs font-semibold text-neutral-300 hover:text-white px-3 py-2 transition-colors"
-          >
-            Sign In
-          </NavLink>
-          
-          <NavLink
-            to="/get-started"
-            className="bg-[#D9FD3A] hover:bg-[#c9f029] text-black text-xs font-bold px-5 py-2.2 rounded-full transition-all duration-300 active:scale-95 shadow-[0_2px_12px_rgba(217,253,58,0.2)]"
-          >
-            Get Started
-          </NavLink>
-        </div>
+        
 
       </div>
     </header>
