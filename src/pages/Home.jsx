@@ -1,4 +1,4 @@
-```jsx
+
 import React, { useEffect, useState } from "react";
 import {
   ArrowUpRight,
@@ -175,106 +175,6 @@ export default function ServicesPage() {
           NAVIGATION
       ========================================================= */}
 
-      <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrollY > 50
-            ? "bg-[#02050e]/85 backdrop-blur-xl border-b border-white/10"
-            : "bg-transparent"
-        }`}
-      >
-        <div className="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
-
-          <a href="#" className="flex items-center gap-3">
-
-            <div className="w-8 h-8 rounded-full border border-blue-400/50 flex items-center justify-center">
-              <span className="text-[10px] tracking-widest text-blue-300">
-                A
-              </span>
-            </div>
-
-            <div>
-              <div className="text-sm tracking-[0.28em] font-light uppercase">
-                Atelier
-              </div>
-
-              <div className="text-[8px] text-slate-500 tracking-[0.3em] uppercase">
-                Architecture Studio
-              </div>
-            </div>
-
-          </a>
-
-          <nav className="hidden md:flex items-center gap-10 text-[10px] tracking-[0.2em] uppercase text-slate-400">
-
-            <a href="#about" className="hover:text-white transition-colors">
-              About
-            </a>
-
-            <a href="#services" className="text-white">
-              Services
-            </a>
-
-            <a href="#process" className="hover:text-white transition-colors">
-              Process
-            </a>
-
-            <a href="#capabilities" className="hover:text-white transition-colors">
-              Capabilities
-            </a>
-
-            <a
-              href="#contact"
-              className="flex items-center gap-2 text-white"
-            >
-              Contact
-              <ArrowUpRight className="w-3 h-3" />
-            </a>
-
-          </nav>
-
-          <button
-            onClick={() => setMobileMenu(!mobileMenu)}
-            className="md:hidden w-10 h-10 border border-white/10 rounded-full flex items-center justify-center"
-          >
-            {mobileMenu ? (
-              <X className="w-4 h-4" />
-            ) : (
-              <Menu className="w-4 h-4" />
-            )}
-          </button>
-
-        </div>
-
-        {mobileMenu && (
-          <div className="md:hidden bg-[#02050e]/95 backdrop-blur-xl border-t border-white/10 px-6 py-8">
-
-            <div className="flex flex-col gap-6 text-xs uppercase tracking-[0.2em] text-slate-300">
-
-              <a href="#about" onClick={() => setMobileMenu(false)}>
-                About
-              </a>
-
-              <a href="#services" onClick={() => setMobileMenu(false)}>
-                Services
-              </a>
-
-              <a href="#process" onClick={() => setMobileMenu(false)}>
-                Process
-              </a>
-
-              <a href="#capabilities" onClick={() => setMobileMenu(false)}>
-                Capabilities
-              </a>
-
-              <a href="#contact" onClick={() => setMobileMenu(false)}>
-                Contact
-              </a>
-
-            </div>
-
-          </div>
-        )}
-      </header>
 
 
       {/* =========================================================
@@ -1142,4 +1042,4 @@ export default function ServicesPage() {
     </div>
   );
 }
-```
+
